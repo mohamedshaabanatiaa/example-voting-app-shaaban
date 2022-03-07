@@ -6,7 +6,7 @@ import random
 import json
 import logging
 import statsd
-c = statsd.StatsClient('10.128.0.4', 8125)
+c = statsd.StatsClient('localhost', 8125)
 c.incr('foo')  # Increment the 'foo' counter.
 c.timing('stats.timed', 320)  # Record a 320ms 'stats.timed'.
 
