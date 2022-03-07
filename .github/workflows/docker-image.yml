@@ -2,6 +2,7 @@ name: Docker Image CI
 
 on:
   push:
+    paths: '/vote/'
     branches: [ dependabot/maven/worker/org.postgresql-postgresql-42.2.25 ]
   pull_request:
     branches: [ dependabot/maven/worker/org.postgresql-postgresql-42.2.25 ]
